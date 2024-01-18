@@ -19,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
 export default function AppNavigator() {
 	const classes = useStyles();
 	return (
-		<AppBar className={classes.AppBar} position="fixed" variant="h6">
+		<AppBar className={classes.AppBar} position="fixed">
 			<Toolbar>
 				<Link to="/" className={classes.link}>
-					<Typography className={classes.title}>Pokedex</Typography>
+					<Typography variant="h6" className={classes.title}>
+						Pokedex
+					</Typography>
 				</Link>
 			</Toolbar>
 		</AppBar>

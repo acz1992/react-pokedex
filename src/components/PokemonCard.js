@@ -32,7 +32,7 @@ export default function PokemonCard(props) {
 	const { pokemon, image } = props;
 	const { id, name } = pokemon;
 	return (
-		<Grid item xs={12} sm={2}>
+		<Grid item xs={12} sm={2} key={id}>
 			<Card className={classes.card}>
 				<CardMedia
 					className={classes.cardMedia}
