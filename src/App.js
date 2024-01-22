@@ -4,6 +4,7 @@ import AppNavigator from "./components/AppNavigator";
 
 import Pokedex from "./containers/Pokedex";
 import PokemonDetails from "./containers/PokemonDetails";
+/* import PokeDetails from "./containers/PokeDetails"; */
 
 export default function App() {
 	return (
