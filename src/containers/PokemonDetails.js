@@ -11,6 +11,10 @@ import {
 	Button,
 } from "@material-ui/core";
 
+const capitalizeLetter = (string) => {
+	return string.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
 const useStyles = makeStyles((theme) => ({
 	pokedexContainer: {
 		height: "84vh",
@@ -98,15 +102,20 @@ export default function PokemonDetails() {
 						/>
 						<Box className={classes.pokemonInfoContainer}>
 							<hr className={classes.seperator} />
-							<Grid container>
-								<Grid item md={1}>
+							<Grid
+								container
+								spacing={10}
+								justifyContent="center"
+							>
+								{/* <Grid item md={1}>
 									<Button
 										className={classes.favourites}
 									></Button>
-								</Grid>
+								</Grid> */}
 								<Grid item md={2}>
 									<Typography className={classes.text}>
-										Name: <br /> {pokemon.name}
+										Name: <br />
+										{capitalizeLetter(pokemon.name)}
 									</Typography>
 								</Grid>
 								<Grid item md={2}>
@@ -128,7 +137,8 @@ export default function PokemonDetails() {
 											<Typography
 												className={classes.text}
 											>
-												Type: <br /> {name}
+												Type: <br />{" "}
+												{capitalizeLetter(name)}
 											</Typography>
 										</Grid>
 									);
