@@ -1,3 +1,12 @@
-# Getting Started with Create React App
+# Pokedex
 
-https://www.youtube.com/watch?v=MznoXYLYBuk&list=PLLIS0v_kktwBoUypy5VGnNV9xwsYeqYr3&index=7&ab_channel=CodeClubHub
+## Mission
+
+-   Re-live those ancient Poke-memories
+-   Use a famous React component Library
+-   Practice getting data with axios
+-   Experiment using React Router
+
+## To Do
+
+-   Make Pokemon Details Page responsive
