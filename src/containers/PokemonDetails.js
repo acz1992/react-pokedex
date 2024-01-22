@@ -8,7 +8,6 @@ import {
 	Typography,
 	makeStyles,
 	Grid,
-	Button,
 } from "@material-ui/core";
 
 const capitalizeLetter = (string) => {
